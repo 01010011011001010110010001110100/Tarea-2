@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+
+    <div id="main-container">
+        <div id="calculator-container">
+            <div id="container-header">
+                <div id="header-display">
+                    <div id="display-history"></div>
+                    <div id="display-result">0</div>
+                </div>
+            </div>
+            <div id="container-body">
+                <div id="body-pad">
+                    <div id="pad-header">
+                        <div id="header-control-pad">
+                            <button type="button"> </button>
+                            <button type="button"> </button>
+                            <button type="button" onclick="resetValues()">C</button>
+                            <button type="button" onclick="removeNumber()">D</button>
+                        </div>
+                    </div>
+                    <div id="pad-body">
+                        <div id="body-num-pad">
+                            <button type="button"> </button>
+                            <button type="button"> </button>
+                            <button type="button"> </button>
+                            <button type="button" onclick="addNumber(1)">1</button>
+                            <button type="button" onclick="addNumber(2)">2</button>
+                            <button type="button" onclick="addNumber(3)">3</button>
+                            <button type="button" onclick="addNumber(4)">4</button>
+                            <button type="button" onclick="addNumber(5)">5</button>
+                            <button type="button" onclick="addNumber(6)">6</button>
+                            <button type="button" onclick="addNumber(7)">7</button>
+                            <button type="button" onclick="addNumber(8)">8</button>
+                            <button type="button" onclick="addNumber(9)">9</button>
+                            <button type="button"> </button>
+                            <button type="button" onclick="addNumber(0)">0</button>
+                            <button type="button"> </button>
+                        </div>
+                        <div id="body-control-pad">
+                            <button type="button" onclick="divide()">/</button>
+                            <button type="button" onclick="multiply()">*</button>
+                            <button type="button" onclick="subtract()">-</button>
+                            <button type="button" onclick="sum()">+</button>
+                            <button type="button" onclick="getResult()" id="btnResult">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results-container">
+            <div id="results-header">
+                Results 
+                <button onclick="clearResultHistory()">Clear</button>
+            </div>
+            <div id="results-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
